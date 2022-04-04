@@ -50,7 +50,7 @@ button:hover{
     margin: auto;
 }
 
-.color-acento{color:blueviolet}
+.color-acento{color:rgb(255, 255, 255)}
 
 header{
     background-image: linear-gradient(to right,#410763 0%, #05077e 100%);
@@ -87,6 +87,12 @@ header a:hover{
     color: blueviolet;
 }
 
+/*Header+Menu (lo de arriba)*/
+
+
+
+/* (lo de arriba) Aca iria lo que tiene que hacer mi compañer@*/
+
 #hero{
     display: flex;
     align-items: center;
@@ -109,15 +115,24 @@ header a:hover{
     color: #ffff;
 }
 
+/*Img Post Menu (lo de arriba)*/
+#somos-gamers{
+    background-image: linear-gradient(to right,#410763 0%, #05077e 100%);
+}
 #somos-gamers .container{
     text-align: center;
     padding: 200px 12px;
 }
 
+/*somos GrandMaster (lo de arriba)*/
+
 #juegos{
     background-color: rgb(30,30,30);
     color: #ffff;
     text-align: center;
+}
+.juegosi h2{
+    font-size: 1em;
 }
 #juegos .container{
     padding: 150px 12px;
@@ -130,23 +145,57 @@ header a:hover{
     display: none;
 }
 
-#juegos .carta{
+#juegos .cartauno{
     background-position: center center;
     background-size: cover;
     padding: 50px;
     margin: 20px;
     border-radius: 15px;
 }
-.carta:first-child{
+#juegos .cartados{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+#juegos .cartatres{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+#juegos .cartacuatro{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+#juegos .cartacinco{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+#juegos .cartaseis{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.cartauno{
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(imagenes/AssassinsCreed.jpg);
+    ,url(imagenes/Battlefield.jpg);
 }
-
-.carta:nth-child(2){
+.cartados{
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -154,7 +203,32 @@ header a:hover{
     )
     ,url(imagenes/CsGo.jpg);
 }
-.carta:nth-child(3){
+
+.cartatres{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/MortalKombat.jpg);
+}
+.cartacuatro{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/StreetFighter.jpg);
+}
+.cartacinco{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/AssassinsCreed.jpg);
+}
+.cartaseis{
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -165,6 +239,9 @@ header a:hover{
 #desktop{
     display: none;
 }
+
+/*Juegos (lo de arriba)*/
+
 .footer{
     background-image: linear-gradient(to right, #05077e 0%, #410763 100%);
     padding: 0.1%;
@@ -190,6 +267,11 @@ header a:hover{
     padding-bottom: 10px;
     font-size: x-small;
 }
+.contacto{
+    display: none;
+}
+
+/*Footer+Contacto (lo de arriba)*/
 
 @media (min-width:720px){
     header{
@@ -206,9 +288,16 @@ header a:hover{
         padding-right: 20px;
     }
 
+/*Header (lo de arriba)*/
+
+/* (lo de arriba) Aca iria lo que tiene que hacer mi compañero*/
+
+
     #hero h1{
         font-size: 5em;
     }
+
+/*Texto img Post Menu (lo de arriba)*/
 
     #somos-gamers .container{
         display: flex;
@@ -233,10 +322,14 @@ header a:hover{
         height: 500px;
         width: 400px;
     }
+
+/*Somos GrandMaster (lo de arriba)*/
+
     #juegos .juegosi{
         display: flex;
         justify-content: center;
     }
+    
     #juegos p{
         display: block;
         margin-bottom: 30px;
@@ -247,6 +340,19 @@ header a:hover{
     #juegos .carta{
         padding: 15px;
     }
+    .categoria{
+        display: none;
+    }
+    #cartados{
+        display: none;
+    }
+    #cartacuatro{
+        display: none;
+    }
+    #cartaseis{
+        display: none;
+    }
+    /*Juegos (lo de arriba)*/
     #contacto {
         background-image: linear-gradient(to right, #05077e 0%, #410763 100%);
         color: #ffffff;
@@ -255,10 +361,10 @@ header a:hover{
         justify-items: center;
         display: flex;
         justify-content: space-evenly;
-   
-   
    }
-   
+   .contacto{
+       display: block;
+   }
    #contacto h2 {
        display: flex;
        margin: 50px;
@@ -327,4 +433,6 @@ header a:hover{
    .copy{
        display: block;
    }
+
+   /*Footer+Galeria (lo de arriba)*/
 }
